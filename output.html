@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Output </title>
+</head>
+<body>
+	<div id="demo1">
+		display1 change by innerHTML 
+	</div>
+	<script>
+		document.getElementById("demo1").innerHTML="Changed"
+		document.write("Hello")
+	</script>
+
+	<h4> using document.write after document load will delete all existing html  </h4>
+	<button onclick="afterLoadDcument()">
+		Load
+	</button>
+	<script>
+		function afterLoadDcument(){
+			document.write("lodded")
+		}
+
+		window.alert("hi this is alert function of window")
+
+		console.log("printed in console")
+
+	</script>
+
+</body>
+</html>

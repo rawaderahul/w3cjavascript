@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>  </title>
+</head>
+<body>
+
+<h4> javascript can change html content  </h4>
+	<div id="demo">
+		this is demo	
+	</div>
+
+	<div id="demo1">
+		this is demo 1	
+	</div>
+
+	<script>
+		document.getElementById("demo").innerHTML="Changed it with double quote";
+		document.getElementById("demo").innerHTML='Changed it with single quote';
+	</script>
+
+<h4> javascript can change HTML Attribute  </h4>	
+	<img id="demo2" src="https://www.imgonline.com.ua/examples/pink-flower-mini-before-lightening.jpg">
+	<button onclick="changeBright()"> Make Image Bright </button>
+	<script>
+		function changeBright(){
+			document.getElementById("demo2").src="https://www.imgonline.com.ua/examples/pink-flower-mini-after-lightening.jpg"
+		}
+	</script>
+
+<h4> javascript can Hide HTML Elemen5  </h4>	
+<div id="demo3">
+	this is the demo 3 for style
+</div>
+<script>
+	document.getElementById("demo3").style.fontSize="40px";	
+</script>
+
+
+<h4> javascript can Hide Html Element  </h4>	
+<div id="demo4">
+	this is demo 4 gonna hide on button click
+</div>
+<button onclick="hideElement()"> Hide </button>
+<script>
+	function hideElement(){
+		document.getElementById("demo4").style.display="none"
+	}
+</script>
+
+
+<h4> javascript can show Html Element  </h4>	
+<button onclick="showElement()"> Show </button>
+<script>
+	function showElement(){
+		document.getElementById("demo4").style.display="block"
+	}
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+alert("exectued from external file ")
